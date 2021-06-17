@@ -1,0 +1,792 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rd-DevDataFactory"
+		},
+		"AzureTableStorage1_connectionString": {
+			"value": ""
+		},
+		"BlobStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"Controltablelinkedservice_connectionString": {
+			"value": ""
+		},
+		"Odbc1_connectionString": {
+			"value": ""
+		},
+		"Odbc1_password": {
+			"value": ""
+		},
+		"Secondary1LinkedService_Test_connectionString": {
+			"value": ""
+		},
+		"Secondary1_Landing Linked Service_connectionString": {
+			"value": ""
+		},
+		"Testblobstorage1_connectionString": {
+			"value": ""
+		},
+		"linkedService1_storage_connectionString": {
+			"value": ""
+		},
+		"Odbc1_properties_typeProperties_userName": {
+			"value": "_SYSTEM"
+		},
+		"Fulltable_Trigger_properties_Branch_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "Branch"
+		},
+		"Fulltable_Trigger_properties_Branch_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Branch_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Branch_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Branch_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Brand_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "Brand"
+		},
+		"Fulltable_Trigger_properties_Brand_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Brand_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Brand_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Brand_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Misc_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "Misc"
+		},
+		"Fulltable_Trigger_properties_Misc_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Misc_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Misc_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Misc_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_SalesPerson_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "SalesPerson"
+		},
+		"Fulltable_Trigger_properties_SalesPerson_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_SalesPerson_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_SalesPerson_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_SalesPerson_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Location_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "Location"
+		},
+		"Fulltable_Trigger_properties_Location_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Location_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Location_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Location_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Product_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "Product"
+		},
+		"Fulltable_Trigger_properties_Product_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Product_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Product_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Product_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_ProductMinor_Cache to ODS Copy Activity_parameters_ControlTable_Entity": {
+			"value": "ProductMinor"
+		},
+		"Fulltable_Trigger_properties_ProductMinor_Cache to ODS Copy Activity_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_ProductMinor_Cache to ODS Copy Activity_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_ProductMinor_Cache to ODS Copy Activity_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_ProductMinor_Cache to ODS Copy Activity_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductMajor_Cache to ODS Copy Activity_parameters_ControlTable_Entity": {
+			"value": "Dim_ProductMajor"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductMajor_Cache to ODS Copy Activity_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductMajor_Cache to ODS Copy Activity_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductMajor_Cache to ODS Copy Activity_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductMajor_Cache to ODS Copy Activity_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductSuper_Cache to ODS Copy Activity_parameters_ControlTable_Entity": {
+			"value": "Dim_ProductSuper"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductSuper_Cache to ODS Copy Activity_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductSuper_Cache to ODS Copy Activity_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductSuper_Cache to ODS Copy Activity_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_Dim_ProductSuper_Cache to ODS Copy Activity_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"Fulltable_Trigger_properties_ModelNote_Cache to ODS_parameters_ControlTable_Entity": {
+			"value": "ModelNote"
+		},
+		"Fulltable_Trigger_properties_ModelNote_Cache to ODS_parameters_ControlTable_Group1": {
+			"value": "10"
+		},
+		"Fulltable_Trigger_properties_ModelNote_Cache to ODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"Fulltable_Trigger_properties_ModelNote_Cache to ODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"Fulltable_Trigger_properties_ModelNote_Cache to ODS_parameters_ControlTable_Group2": {
+			"value": "20"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.Customer"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateModified"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.Customer"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.Customer.DateModified"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "Customer"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"HeaderTable_Trigger_properties_Customer_CachetoODS_parameters_Data_Source_WaterMarkColumn_created": {
+			"value": "DateCreated"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.Invoice"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.Invoice"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "Invoice"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_Invoice_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.Model"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateModified"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.Model"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.Model.DateModified"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "Model"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_Model_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.Serial"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateReceived"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.Serial"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.Serial.DateReceived"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "Serial"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_Serial_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.PO"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateStarted"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.PO"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.PO.DateStarted"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "PO"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_PO_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.Supplier"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateCreated"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.Supplier"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.Supplier.DateCreated"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "Supplier"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"HeaderTable_Trigger_properties_Supplier_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoiceMisc"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoiceMisc"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoiceMisc.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_DeltaOffset": {
+			"value": -2
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoiceMisc"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoiceMisc_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoiceAddress"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoiceAddress"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoiceAddress.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoiceAddress"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoiceAddress_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoiceModel"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "SQLUser.InvoiceModel.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoiceModel"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoiceModel.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoiceModel"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceModel_CachetoODS_parameters_Data_Source2_WaterMarkColumn2": {
+			"value": "SQLUser.Invoice.sysCreated"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoiceWarranty"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoiceWarranty"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoiceWarranty.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoiceWarranty"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceWarranty_CachetoODS_parameters_Data_Source2_WaterMarkColumn2": {
+			"value": "SQLUser.InvoiceWarranty.sysCreated"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoicePayment"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoicePayment"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoicePayment.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoicePayment"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoicePayment_CachetoODS_parameters_Data_Source2_WaterMarkColumn2": {
+			"value": "SQLUser.InvoicePayment.sysCreated"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.InvoiceSerial"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.InvoiceSerial"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.InvoiceSerial.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "InvoiceSerial"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source_Table_Name2": {
+			"value": "SQLUser.Invoice"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source2_WaterMarkColumn": {
+			"value": "SQLUser.Invoice.sysModified"
+		},
+		"InvoiceChildTable_properties_InvoiceSerial_CachetoODS_parameters_Data_Source2_WaterMarkColumn2": {
+			"value": "SQLUser.InvoiceSerial.sysCreated"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.POModel"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "DateStamp"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.POModel"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.POModel.DateStamp"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "POModel"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_POModel_CachetoODS_parameters_Data_Source_WaterMarkColumn2": {
+			"value": "SQLUser.PO.DateStarted"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Source_Table_Name": {
+			"value": "SQLUser.POSerial"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Source_WaterMarkColumn": {
+			"value": "ModelDateStamp"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Destination_Container": {
+			"value": "rd.POSerial"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Destination_Directory": {
+			"value": " "
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Control_Table_Table_Name": {
+			"value": "watermark_table"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Control_Table_Column_Name": {
+			"value": "Invoicewatermark_value"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Source_WaterMarkColumn_modified": {
+			"value": "SQLUser.POSerial.ModelDateStamp"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_DeltaOffset": {
+			"value": -1
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_ControlTable_Entity": {
+			"value": "POSerial"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_ControlTable_Group1": {
+			"value": 10
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_ControlTable_Group2": {
+			"value": 20
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_ETLBeginTimeColumn": {
+			"value": "ETL Last Run Start"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_ETLEndTimeColumn": {
+			"value": "ETL Last Run End"
+		},
+		"InvoiceChildTable_properties_POSerial_CachetoODS_parameters_Data_Source_WaterMarkColumn2": {
+			"value": "SQLUser.PO.DateStarted"
+		}
+	}
+}
